@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ваше имя</title>
+
+</head>
+
+<body>
+    <h1>Ваше имя:</h1>
+    <span id="yourname"></span>
+    <script>
+        var name = prompt("Введите Ваше имя");
+        function printName(name) {
+            alert(`Ваше имя: ${name}`);
+            document.getElementById('yourname').innerText = name;
+        }
+        printName(name);
+    </script>
+</body>
+
+</html>
